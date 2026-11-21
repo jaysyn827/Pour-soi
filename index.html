@@ -3,41 +3,75 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pour-soi</title>
+<title>POUR-SOI - Jaysyn</title>
 <style>
-* { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
-body { background:#0f0f0f; color:white; text-align:center; }
-header { padding:80px 20px 40px; }
-h1 { font-size:48px; letter-spacing:2px; }
-p { color:#aaa; font-size:18px; margin-top:15px; }
-.btn { display:inline-block; margin-top:30px; background:white; color:black; padding:15px 30px; border-radius:50px; text-decoration:none; font-weight:bold; font-size:18px; }
-section { padding:50px 20px; max-width:800px; margin:auto; }
-.card { background:#1c1c1c; padding:30px; border-radius:20px; margin:20px 0; text-align:left; }
-.card h2 { margin-bottom:10px; }
-.card p { color:#bbb; }
-footer { padding:30px; color:#666; font-size:14px; }
+body{margin:0;font-family:Arial,sans-serif;background:#0f0f0f;color:white;text-align:center}
+header{padding:60px 20px;background:linear-gradient(135deg,#ff0055,#7a00ff)}
+h1{font-size:50px;margin:0;letter-spacing:3px}
+p{color:#ddd}
+.btn{display:inline-block;background:white;color:black;padding:15px 25px;margin:10px;border-radius:30px;font-weight:bold;text-decoration:none;font-size:18px}
+.btn2{background:#ff0055;color:white}
+section{padding:40px 20px}
+.card{background:#1e1e1e;margin:15px auto;padding:20px;border-radius:20px;max-width:400px;cursor:pointer}
+.card:active{transform:scale(0.97)}
+video{width:100%;border-radius:15px}
 </style>
 </head>
 <body>
+
 <header>
 <h1>POUR-SOI</h1>
-<p>Bienvenue sur mon site officiel.</p>
-<a class="btn" href="#">Me suivre</a>
+<p>Bienvenue sur mon site officiel - Jaysyn</p>
+<a class="btn" href="#videos">▶ Voir mes vidéos</a><br>
+<a class="btn btn2" href="#univers">✦ Mon univers</a>
 </header>
-<section>
-<div class="card">
-<h2>🔥 Mon univers</h2>
-<p>Découvre mon contenu, mes projets et mes nouveautés.</p>
+
+<section id="univers">
+<h2>✦ Mon univers</h2>
+<p>Clique sur une carte pour découvrir :</p>
+
+<div class="card" onclick="alert('Bienvenue dans mon univers Jaysyn ! Bientôt plein de vidéos ici 🔥')">
+<h3>🎬 Mes vidéos</h3>
+<p>Clique ici pour voir mes vidéos</p>
 </div>
-<div class="card">
-<h2>🎬 Mes vidéos</h2>
-<p>Retrouve toutes mes dernières vidéos ici.</p>
+
+<div class="card" onclick="alert('Cest moi Jaysyn ! Merci dêtre là ❤️')">
+<h3>👤 Cest moi</h3>
+<p>Clique pour me découvrir</p>
 </div>
-<div class="card">
-<h2>📩 Contact</h2>
-<p>Pour me contacter, envoie-moi un message sur mes réseaux.</p>
+
+<div class="card" onclick="document.getElementById('videos').scrollIntoView({behavior:'smooth'})">
+<h3>🔥 Nouveautés</h3>
+<p>Clique pour aller aux vidéos</p>
 </div>
 </section>
-<footer>© 2026 Pour-soi - Tous droits réservés</footer>
+
+<section id="videos">
+<h2>🎬 Mes vidéos</h2>
+<p>Mes premières vidéos arrivent bientôt !</p>
+
+<div class="card">
+<video controls poster="https://via.placeholder.com/400x220/FF0055/FFFFFF?text=POUR-SOI">
+<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+</video>
+<h3>Vidéo 1 - Bientôt</h3>
+<p>Clique sur ▶ pour tester la vidéo</p>
+<button class="btn btn2" onclick="alert('Ta vraie vidéo sera ici bientôt Jaysyn !')">❤️ J’aime</button>
+</div>
+
+<div class="card" onclick="alert('Nouvelle vidéo bientôt... Reste branché !')">
+<h3>🎥 Vidéo 2 - Bientôt</h3>
+<p>Clique pour découvrir</p>
+</div>
+</section>
+
+<section id="contact">
+<h2>📩 Contact</h2>
+<p>Tu veux me parler ?</p>
+<a class="btn" href="mailto:jaysyn@gmail.com">Envoyer un mail</a>
+</section>
+
+<p style="padding:20px;color:#888">© 2026 POUR-SOI - Jaysyn</p>
+
 </body>
 </html>
